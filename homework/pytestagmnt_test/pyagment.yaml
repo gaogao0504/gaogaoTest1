@@ -1,0 +1,36 @@
+test_add:
+        datas:
+         -
+          - 1
+          - 2
+          - 3
+         - [1, 2, 3]
+         - [7,9,0]
+        ids:
+         - 'int1'
+         - 'int2'
+         - 'int3'
+test_sub:
+       datas:
+         -
+          - 5
+          - 2
+          - 3
+       ids:
+         - 'sub1'
+test_multi:
+        datas:
+         -
+          - 1
+          - 2
+          - 2
+        ids:
+         - 'multi'
+test_div:
+        datas:
+         -
+           - 1
+           - 0
+           - 1
+        ids:
+         - 'div'
