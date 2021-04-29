@@ -6,11 +6,11 @@
 3、定义工资查询模块 select_money，用来展示工资数额
 4、定义一个start.py ，启动文件展示最终存款金额
 """
-import send_money
+import money
 
 
 def select_money():
-    if send_money.send_money() == 2000:
-        print("您的工资数额为：" + str(send_money.send_money()) + '元')
+    if money.saved_money == 2000:
+        print("您的工资数额为：" + str(money.saved_money) + '元')
     else:
         print("还没发呢，在等等吧")

@@ -8,8 +8,6 @@
 import pytest
 import yaml
 
-from pythoncode.homework.pytestagmnt_test.calculator1 import Calculator
-
 
 def get_datas():
     with open("pyagment.yaml") as f:

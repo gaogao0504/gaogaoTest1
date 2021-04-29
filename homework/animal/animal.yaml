@@ -13,6 +13,7 @@ cat2: &cat2
         sex: "母"
         fur: "短毛"
 
+
 dog1: &dog1
         name: "皮蛋"
         color: "黄色"
@@ -29,3 +30,37 @@ default:
  <<: *cat1
 default1:
  <<: *dog1
+
+#
+#cats: &cats
+#        -
+#          name: "一坨"
+#          color: "白色"
+#          age: 1
+#          sex: "公"
+#          fur: "短毛"
+#        -
+#          name: "两坨"
+#          color: "蓝色色"
+#          age: 1.5
+#          sex: "母"
+#          fur: "短毛"
+#dogs: &dogs
+#        -
+#         name: "皮蛋"
+#         color: "黄色"
+#         age: "1"
+#         sex: "母"
+#         fur: "长毛"
+#
+#        -
+#         name: "肉球"
+#         color: "黑色"
+#         age: "3"
+#         sex: "母"
+#         fur: "短毛"
+#
+#default:
+#<<: *cats
+#default1:
+#<<: *dogs

@@ -26,12 +26,13 @@ class Calculator:
 
     # 相除功能
     def div(self, a, b):
+        return a / b
         # if b == 0:
         #     print("0")
         # else:
         #     return a / b
-
-        try:
-            return a / b
-        except Exception as e:
-            return "这里有个异常"
+        #
+        # try:
+        #     return a / b
+        # except Exception as e:
+        #     return "这里有个异常"

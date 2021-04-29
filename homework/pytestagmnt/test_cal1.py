@@ -7,7 +7,7 @@
 """
 import pytest
 
-from pythoncode.homework.pytestagmnt.calculator1 import Calculator
+from pythoncode import Calculator
 
 
 class TestCal:
@@ -48,4 +48,12 @@ class TestCal:
                               [-1, -2, 0.5], [-1, -2, -4], [0, 1, 0], [1, 0, 0]])
     def test_div(self, a, b, expect):
         calc = Calculator()
-        assert calc.div(a, b) == expect
+        try:
+            calc.div(a, b)
+
+        except Exception as e:
+            print("这里有个异常")
+
+        else:
+            assert calc.div(a, b) == expect
+

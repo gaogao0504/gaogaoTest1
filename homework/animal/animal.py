@@ -108,12 +108,19 @@ if __name__ == '__main__':
     with open("animal.yaml") as f:
         # yaml.safe_load() 是将yaml格式转换为python对象
         animals = yaml.safe_load(f)
+        # 1、yaml文件以数组的格式储存
+        # cats = animals["cats"]
+        # dogs = animals["dogs"]
+        # cats = animals["default"]
+        # dogs = animals["default1"]
         cat = animals["default"]
         dog = animals["default1"]
-    # cat = Cat(animals["cats"][0]["name"], animals["cats"][0]["color"], animals["cats"][0]["age"], animals["cats"][0]["sex"] , animals["cats"][0]["fur"])
+    # cat = Cat(cats[0]["name"], cats[0]["color"], cats[0]["age"], cats[0]["sex"], cats[0]["fur"])
     cat = Cat(cat["name"], cat['color'], cat['age'], cat['sex'], cat['fur'])
     print(f"猫猫的名字是：{cat.name} \n猫猫的颜色是：{cat.color}\n猫猫的年龄为：{str(cat.age)} 岁\n猫猫的性别为:{cat.sex} \n猫猫的毛发为：{cat.fur}")
     cat.catch()
+
+    # dog = Dog(dogs[0]["name"], dogs[0]['color'], dogs[0]['age'], dogs[0]['sex'], dogs[0]['fur'])
     dog = Dog(dog["name"], dog['color'], dog['age'], dog['sex'], dog['fur'])
     print(f"狗狗的名字是：{dog.name} \n狗狗的颜色是：{dog.color}\n狗狗的年龄为：{str(dog.age)} 岁\n狗狗的性别为:{dog.sex} \n狗狗的毛发为：{dog.fur}")
     dog.watch_home()

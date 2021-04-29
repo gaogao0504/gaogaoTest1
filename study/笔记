@@ -1,0 +1,10 @@
+YAML
+安装PyYAML
+彩云小译
+可参考官方文档 /yaml菜鸟教程
+1、首先需要安装pyyaml
+   步骤：
+   1、pyharm- preferences-项目-新增-PyYaml 安装
+      如果安装的慢，可以加镜像源
+2、倒入yaml
+   import
