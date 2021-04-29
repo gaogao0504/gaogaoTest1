@@ -7,7 +7,7 @@
 """
 import pytest
 
-from pythoncode import Calculator
+from pythoncode.homework.pytestagmnt.calculator1 import Calculator
 
 
 class TestCal:

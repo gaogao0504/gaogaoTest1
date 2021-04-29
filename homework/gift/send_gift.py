@@ -22,7 +22,7 @@
 # # if __name__ == '__main__':  # 问题1
 # #     send_gift()
 #     show_gift()
-from pythoncode import gift
+from pythoncode.homework import gift
 
 
 def send_gift():

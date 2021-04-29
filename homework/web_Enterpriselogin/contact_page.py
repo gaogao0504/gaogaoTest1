@@ -1,5 +1,5 @@
 # 通讯录页面
-from pythoncode import AddMember
+from pythoncode.homework.web_Enterpriselogin.add_member_page import AddMember
 
 
 class Contact:

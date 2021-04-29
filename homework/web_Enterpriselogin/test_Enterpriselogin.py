@@ -1,7 +1,4 @@
 
-from time import sleep
-import yaml
-from selenium import webdriver
 
 
 # 复用浏览器步骤
@@ -19,9 +16,7 @@ from selenium import webdriver
 # PO页面对象
 
 # 复用浏览器，只对当前页面做操作
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions
-from selenium.webdriver.support.wait import WebDriverWait
+from selenium import webdriver
 
 
 class TestWework:

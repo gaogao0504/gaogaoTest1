@@ -1,7 +1,7 @@
 # conftest开发公共模块
 import pytest
 
-from pythoncode import Calculator
+from pythoncode.homework.pytestagmnt_test.calculator1 import Calculator
 
 
 @pytest.fixture()
